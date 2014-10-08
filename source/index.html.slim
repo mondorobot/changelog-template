@@ -1,0 +1,33 @@
+.row.collapse
+  .small-12.column
+    ul#releases
+      - 10.times do
+        li.release
+          .release-header
+            span.icon
+              i.icon-tag
+
+            span.name
+              | v0.0.1-b1
+
+            span.date
+              i.icon-calendar
+              | 10/05/2014
+
+          table.stories
+            tbody
+              - 10.times do
+                tr.story
+                  - type = ['new', 'bug', 'changed'].shuffle.first
+                  td class="icon #{type}"
+                    i class="icon-#{type === 'bug' ? 'fixed' : type}"
+
+                  td class="type #{type}"
+                    = type === 'bug' ? 'Fixed' : type.titleize
+
+                  td.story-id
+                    a href="#"
+                      | #7838843
+
+                  td.name
+                    = Faker::Lorem.sentence(20)

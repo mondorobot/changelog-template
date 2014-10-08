@@ -1,0 +1,111 @@
+// Imoprt fonts
+@import url(http://fonts.googleapis.com/css?family=Questrial|Ubuntu+Mono:400,700|Open+Sans:300,400,700|Merriweather:400,400italic,700,700italic)
+
+// Palette
+$palette-white: #fff
+$palette-black: #000
+$palette-red: #ea4c4d
+$palette-bright-blue: #3498db
+
+$palette-light-gray: #d8d8d8
+$palette-dark-gray: #919191
+
+$palette-light-purple: #e9cfff
+$palette-purple: #8106e0
+
+$palette-light-orange: #ffedcf
+$palette-orange: #f90
+
+$palette-light-green: #f0ffe1
+$palette-green: #5ba622
+
+$palette-google: #dd4b39
+$palette-facebook: #3b5998
+$palette-twitter: #4099ff
+$palette-instagram: #1d5382
+$palette-github: #000
+$palette-rss: #d35400
+
+// Base rem size / functions
+$base-font-size: 20px
+$rem-base: $base-font-size
+
+// Now that $base-font-size and $rem-base are set, we can
+// import foundation functions for tools like rem-calc(...)
+@import 'foundation/scss/foundation/functions'
+
+// Foundation Settings
+$include-open-sans: false
+$include-xl-html-grid-classes: true
+$include-xl-html-block-grid-classes: true
+
+// Grid and block spacing
+$column-gutter: 1rem
+$global-radius: rem-calc(4)
+$row-width: 960px
+$button-function-factor: 10%
+$block-grid-default-spacing: 1rem
+
+$small-font-size: 60%
+
+$primary-color: $palette-bright-blue
+
+$body-bg: $palette-white
+
+$body-font-family: 'Open Sans', 'sans-serif'
+$body-font-color: $palette-black
+$body-font-weight: 300
+
+$header-font-family: 'Questrial', 'Open Sans', 'sans-serif'
+$header-font-color: $palette-black
+$header-font-weight: 300
+$header-top-margin: 1rem
+$header-bottom-margin: .5rem
+
+$h2-font-size: 1.5rem
+
+$button-font-weight: 300
+
+$paragraph-font-family: $body-font-family
+$paragraph-font-size: 1rem
+$paragraph-font-weight: $body-font-weight
+
+$panel-bg: $palette-white
+$panel-border-color: $palette-dark-gray
+$panel-padding: 2rem 1.5rem
+
+$form-spacing: 1rem
+$form-label-font-size: rem-calc(16)
+$form-label-font-color: $palette-dark-gray
+$form-label-bottom-margin: 0
+$form-label-font-weight: 400
+
+$input-font-color: $palette-bright-blue
+$input-font-size: rem-calc(14)
+$input-bg-color: $palette-white
+$input-border-color: $palette-light-gray
+$input-focus-bg-color: $palette-white
+$input-focus-border-color: $palette-bright-blue
+$input-border-style: solid
+$input-border-width: 1px
+$input-disabled-bg: #ddd
+$input-box-shadow: none
+$input-include-glowing-effect: false
+$input-border-radius: $global-radius
+
+$input-error-message-padding: .15rem .5rem
+$input-error-message-font-size: .8rem
+$input-error-message-font-weight: normal
+$input-error-message-font-color: $palette-red
+
+$f-dropdown-triangle-size: 0
+
+$flex-video-margin-bottom: 0
+
+$reveal-overlay-bg: rgba(#000, .9)
+$reveal-modal-bg: $palette-black
+$reveal-drop-shadow: 0
+$reveal-border-width: 1px
+$reveal-border-color: darker($palette-dark-gray, 5%)
+$reveal-modal-padding: 1rem
+$reveal-default-width: 30%

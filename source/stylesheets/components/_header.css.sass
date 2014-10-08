@@ -1,0 +1,70 @@
+header
+  background-color: $palette-white
+  border-bottom: 1px solid $palette-light-gray
+
+  h1
+    font-size: 1rem
+    margin: 1.15rem .5rem .75rem
+
+    @media #{$large-up}
+      margin-left: 0
+
+    a
+      color: $header-font-color
+
+    a:hover
+      text-decoration: none
+      color: $header-font-color
+
+  #search
+    margin-top: 1rem
+
+    input
+      height: auto
+      font-size: rem-calc(14)
+      padding: .25rem
+      border-right: 0
+      margin: 0
+      +radius($global-radius 0 0 $global-radius)
+
+    button
+      height: auto
+      line-height: rem-calc(25)
+      font-size: 1rem
+      padding: 0
+      padding-top: rem-calc(4)
+      background-color: $palette-white
+      color: $palette-light-gray
+      border: 1px solid $palette-light-gray
+      border-left: 0
+      +radius(0 $global-radius $global-radius 0)
+      transition: all 0.15s linear
+
+      &.focus
+        border-color: $palette-bright-blue
+        color: $palette-bright-blue
+
+        i
+          color: $palette-bright-blue
+
+  #small-menu-toggle
+    @extend .show-for-small-only
+    float: right
+    margin: .75rem .25rem 0 0
+    font-size: 1.5rem
+    color: $palette-dark-gray
+
+
+  #menu
+    @extend .hide-for-small-only
+    float: right
+    margin: 1rem 0
+
+    li
+      display: inline-block
+      padding: 0 1rem
+      text-align: center
+
+    a
+      font-size: rem-calc(14)
+      font-weight: normal

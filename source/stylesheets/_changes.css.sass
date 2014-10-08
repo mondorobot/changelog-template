@@ -1,0 +1,69 @@
+#releases
+  list-style-type: none
+  margin: 1rem 0 0 0
+
+  .release
+    margin-bottom: 1rem
+
+    .release-header
+      padding-top: 1rem
+      padding-bottom: .5rem
+
+      i
+        color: $palette-light-gray
+        font-size: 1.15rem
+        margin-right: .5rem
+
+      .name
+        font-size: 1.2rem
+        font-weight: normal
+        margin-right: 2rem
+
+      .date
+        color: $palette-dark-gray
+        font-size: rem-calc(14)
+
+        i
+          font-size: .75rem
+          margin-right: .25rem
+
+  .stories
+    border: 0
+
+    tr:nth-of-type(even)
+      background-color: transparent
+
+      td.fixed
+        position: normal
+
+    .story
+      font-size: rem-calc(18)
+
+      .icon
+        padding-right: 0
+        font-size: rem-calc(16)
+        vertical-align: middle
+        text-align: center
+
+      .story-id a, .story-id a:hover
+        color: $palette-black
+        font-family: 'Questrial'
+
+      .story-id a:hover
+        text-decoration: underline
+
+      .type
+        text-transform: uppercase
+        font-weight: normal
+
+      .name
+        font-size: rem-calc(14)
+
+  .bug
+    color: $palette-green
+
+  .changed
+    color: $palette-purple
+
+  .new
+    color: $palette-orange

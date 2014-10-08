@@ -1,0 +1,18 @@
+{
+  "name": "mondorobot-boilerplate",
+  "version": "0.0.1",
+  "authors": [
+    "Zach Payne <uxtronaut@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "foundation": "5.4.3",
+    "underscore": "1.7.0",
+    "backbone": "1.1.2",
+    "requirejs": "2.1.15",
+    "requirejs-text": "2.0.12",
+    "swig": "https://github.com/ravenac95/swig-bower.git",
+    "lumberjack": "1.0.9"
+  }
+}

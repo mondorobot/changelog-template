@@ -1,0 +1,29 @@
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+
+# Ignore generated docs
+docs/
+
+# Ignore bundler config
+/.bundle
+
+# Ignore bower components
+/bower_components
+
+# Ignore node modules
+/node_modules
+
+# Ignore the build directory
+/build
+
+# Ignore cache
+/.sass-cache
+/.cache
