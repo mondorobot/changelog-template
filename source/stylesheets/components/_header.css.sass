@@ -1,10 +1,18 @@
 header
   background-color: $palette-white
   border-bottom: 1px solid $palette-light-gray
+  padding: 1rem 0
+
+  .mondo-logo
+    @include sprite-background-image("mondo-robot-text-logo", $setHeight: true, $setWidth: true)
+    display: inline-block
+    vertical-align: middle
+    margin-right: .5rem
 
   h1
-    font-size: 1rem
-    margin: 1.15rem .5rem .75rem
+    font-size: 1.25rem
+    font-family: 'Questrial'
+    margin: 0
 
     @media #{$large-up}
       margin-left: 0
