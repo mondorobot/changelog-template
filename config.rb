@@ -13,6 +13,7 @@ configure :build do
   activate :minify_javascript
   activate :minify_css
   activate :asset_hash
+  activate :relative_assets
 end
 
 after_configuration do
