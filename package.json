@@ -1,9 +1,0 @@
-{
-  "name": "MondoRobotBoilerplate",
-  "version": "0.0.1",
-  "dependencies": {
-    "coffee-jshint": "0.1.2",
-    "complexity-report": "1.0.3",
-    "csscomb": "2.0.4"
-  }
-}
