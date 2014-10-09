@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icons';
-	src:font-url('icons.eot?quoatl');
-	src:font-url('icons.eot?#iefixquoatl') format('embedded-opentype'),
-		font-url('icons.woff?quoatl') format('woff'),
-		font-url('icons.ttf?quoatl') format('truetype'),
-		font-url('icons.svg?quoatl#icons') format('svg');
+	src:font-url('icons.eot?mjf37n');
+	src:font-url('icons.eot?#iefixmjf37n') format('embedded-opentype'),
+		font-url('icons.woff?mjf37n') format('woff'),
+		font-url('icons.ttf?mjf37n') format('truetype'),
+		font-url('icons.svg?mjf37n#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,29 +26,17 @@
 .icon-tag:before {
 	content: "\e601";
 }
-.icon-calendar:before {
-	content: "\e611";
-}
-.icon-new:before {
+.icon-feature:before {
 	content: "\e613";
 }
 .icon-heart:before {
 	content: "\e605";
 }
-.icon-fixed:before {
+.icon-bug:before {
 	content: "\e602";
 }
-.icon-changed:before {
+.icon-chore:before {
 	content: "\e614";
-}
-.icon-search:before {
-	content: "\e600";
-}
-.icon-statistics:before {
-	content: "\e603";
-}
-.icon-menu:before {
-	content: "\e604";
 }
 .icon-github:before {
 	content: "\e607";

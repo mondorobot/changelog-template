@@ -1,33 +1,37 @@
 .row.collapse
   .small-12.column
     ul#releases
-      - 10.times do
+      - 3.times do
         li.release
-          .release-header
-            span.icon
-              i.icon-tag
-
-            span.name
-              | v0.0.1-b1
-
-            span.date
-              i.icon-calendar
-              | 10/05/2014
-
           table.stories
+            thead.release-header
+              tr
+                th.name-wrapper colspan="3"
+                  i.icon-tag
+                  span.name
+                  | v0.0.1-b1
+
+                th.date
+                  | 10/05/2014
+
             tbody
-              - 10.times do
-                tr.story
-                  - type = ['new', 'bug', 'changed'].shuffle.first
-                  td class="icon #{type}"
-                    i class="icon-#{type === 'bug' ? 'fixed' : type}"
+              - ['bug', 'chore', 'feature'].each do |type|
 
-                  td class="type #{type}"
-                    = type === 'bug' ? 'Fixed' : type.titleize
+                - display_type = 'fixed' if type == 'bug'
+                - display_type = 'changed' if type == 'chore'
+                - display_type = 'new' if type == 'feature'
 
-                  td.story-id
-                    a href="#"
-                      | #7838843
+                tr class="story #{type}"
+                  td class="icon"
+                    i class="icon-#{type}"
+
+                  td class="type"
+                    = display_type
+
+                  td.story-id-wrapper
+                    a.url href="#"
+                      span.story-id
+                        | #33333333
 
                   td.name
-                    = Faker::Lorem.sentence(20)
+                      = Faker::Lorem.sentence(20)

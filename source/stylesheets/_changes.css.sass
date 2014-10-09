@@ -3,25 +3,32 @@
   margin: 1rem 0 0 0
 
   .release
-    margin-bottom: 1rem
+    margin-bottom: 2rem
 
     .release-header
+      background-color: transparent
       padding-top: 1rem
-      padding-bottom: .5rem
+
+      th
+        font-weight: 300
+        padding-bottom: 1rem
 
       i
         color: $palette-light-gray
         font-size: 1.15rem
         margin-right: .5rem
 
-      .name
+      .name-wrapper
         font-size: 1.2rem
         font-weight: normal
         margin-right: 2rem
+        padding-left: 0
 
       .date
         color: $palette-dark-gray
         font-size: rem-calc(14)
+        line-height: rem-calc(14)
+        vertical-align: bottom
 
         i
           font-size: .75rem
@@ -34,34 +41,43 @@
       background-color: transparent
 
     .story
-      font-size: rem-calc(18)
 
       .icon
+        font-size: rem-calc(16)
         padding-right: 0
         padding-left: 0
-        font-size: rem-calc(16)
-        vertical-align: middle
         text-align: center
+        vertical-align: top
 
-      .story-id a, .story-id a:hover
+      .story-id-wrapper
+        vertical-align: top
+
+      .story-id-wrapper a, .story-id-wrapper a:hover
         color: $palette-black
         font-family: 'Questrial'
 
-      .story-id a:hover
+      .story-id-wrapper a:hover
         text-decoration: underline
+        vertical-align: top
 
       .type
-        text-transform: uppercase
         font-weight: normal
+        text-transform: uppercase
+        vertical-align: top
 
       .name
         font-size: rem-calc(14)
+        margin-bottom: .5rem
+        vertical-align: top
 
   .bug
-    color: $palette-green
+    td.icon, td.type
+      color: $palette-green
 
-  .changed
-    color: $palette-purple
+  .chore
+    td.icon, td.type
+      color: $palette-purple
 
-  .new
-    color: $palette-orange
+  .feature
+    td.icon, td.type
+      color: $palette-orange
