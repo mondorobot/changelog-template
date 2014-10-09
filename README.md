@@ -40,19 +40,19 @@ Create a `changelog` folder in within your project, then copy the template you j
 ```shell
 cd my_project
 mkdir changelog
-cp -R ../mondo-changelog/build/* changelog
+cp -R ../changelog-template/build/* changelog
 ```
 
 Copy the rake task into your project:
 
 In a Rails app:
 ```shell
-cp ../mondo-changelog/lib/tasks/changelog.rake lib/tasks
+cp ../changelog-template/lib/tasks/changelog.rake lib/tasks
 ```
 
 In a Backbone app:
 ```shell
-cp ../mondo-changelog/lib/tasks/changelog.rake build/tasks
+cp ../changelog-template/lib/tasks/changelog.rake build/tasks
 ```
 
 If your `Rakefile` isn't configured to load tasks from a subfolder, add the following to your `Rakefile`:
