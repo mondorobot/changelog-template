@@ -63,7 +63,7 @@ Add your PivotalTracker API Token as an environment variable.
 
 * Find your PivotalTracker API Token in your Pivotal account profile.
 * Copy it, then add it to your `.bash_profile` or wherever you like to set environment variables:
-  ```sh
+  ```
   export PIVOTAL_API_KEY=xxx
   ```
 
